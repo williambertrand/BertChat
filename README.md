@@ -1,6 +1,6 @@
 ## Bert_Chat
 
-I created this directly from Facebook's Flux Chat App to help myself get an
+I created this from Facebook's Flux Chat App to help myself get an
 understanding of React and Flux.
 
 ## Running

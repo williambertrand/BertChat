@@ -42,6 +42,12 @@ var MessageStore = assign({}, EventEmitter.prototype, {
     var messageRef = _bertMessagesRef.child('messages');
     messageRef.on('child_added', function(snapshot, prevChildKey){
       var messageData = snapshot.val()
+
+      // if (prevChildKey != null) {
+      //   _threads[prevID].firebaseId = prevChildKey;
+      // }
+      // prevId = message.id;
+
       var message = ChatMessageUtils.convertFBMessage(messageData, ThreadStore.getCurrentID())
       _messages.push(message)
       MessageStore.emitChange();

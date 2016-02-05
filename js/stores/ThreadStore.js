@@ -31,7 +31,8 @@ var defaultEmptyMessage = {
 _threads[emptyThreadID] = {
   id: emptyThreadID,
   name: 'Welcome to BertChat',
-  lastMessage: defaultEmptyMessage
+  lastMessage: defaultEmptyMessage,
+  firebaseId: '8675309'
 }
 
 //start current id as the empty "welcome" thread
@@ -44,10 +45,12 @@ var ThreadStore = assign({}, EventEmitter.prototype, {
 
     //create a default empty thread
     var messageRef = _bertMessagesRef.child("messages");
-
+    var prevID = '';
     //bind _threads to changes made in firebase ref
     messageRef.on("child_added", function(snapshot) {
+
         var message = snapshot.val();
+        var key ='';
         var threadID = message.threadID;
         var thread = _threads[threadID];
 
@@ -58,7 +61,8 @@ var ThreadStore = assign({}, EventEmitter.prototype, {
           threadName: message.threadName,
           date: new Date(message.timestamp),
           text: message.text,
-          isRead: message.threadID === _currentID
+          isRead: message.threadID === _currentID,
+          firebaseId: 'key'
         };
 
         if (thread && thread.lastMessage.timestamp > message.timestamp) {
@@ -71,6 +75,8 @@ var ThreadStore = assign({}, EventEmitter.prototype, {
           lastMessage: messageObj
         };
 
+
+
         //threadstore is changed, so emit a change event
         ThreadStore.emitChange();
     });
@@ -79,6 +85,15 @@ var ThreadStore = assign({}, EventEmitter.prototype, {
   createNewThread: function(newThreadId) {
     var messageRef = _bertMessagesRef.child("messages");
     var timestamp = Date.now();
+
+    messageRef.push().set({
+      threadID:newThreadId,
+      threadName: 'Chat with Bert ' + newThreadId,
+      id: "m_" + timestamp,
+      authorName: 'Bert',
+      text: "Hey, I'm Bert, what do you want to chat about?",
+      timestamp: timestamp
+    });
 
     messageRef.push().set({
       threadID:newThreadId,
@@ -164,12 +179,14 @@ var ThreadStore = assign({}, EventEmitter.prototype, {
   Still in progress
 **/
   deleteThread: function(threadID){
+    var messageRef = _bertMessagesRef.child("messages");
     console.log('the thread to be deleted is ', threadID);
+    //var _bertMessagesRef = new Firebase("https://bertchat.firebaseIO.com")
+    messageRef.orderByChild("threadID").on("child_added", function(snapshot) {
+  console.log(snapshot.key() + " was " + snapshot.val().threadID + " meters tall");
+});
 
-    _bertMessageRef.orderByChild("threadID").equalTo(threadID)
-              .once('value', function(snap) {
-                console.log('thread matching threadID', snap.val())
-              });
+
     for (var id in _threads) {
       if (id === threadID) {
         //_threads[id] = null;

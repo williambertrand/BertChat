@@ -26,30 +26,48 @@ var MessageComposer = React.createClass({
   render: function() {
     return (
       <div>
-      <textarea
-        className="form-control message-composer"
-        name="message"
-        value={this.state.text}
-        onChange={this._onChange}
-        onKeyDown={this._onKeyDown}
-      />
+        <div className='row'>
+          <div className='col-md-10'>
+            <textarea
+              className="form-control message-composer"
+              name="message"
+              value={this.state.text}
+              onChange={this._onChange}
+              onKeyDown={this._onKeyDown}
+            />
+          </div>
+          <div className='col-md-2'>
+            <button className='btn btn-primary'
+              onClick={this._onSendClick}>
+              Send
+            </button>
+          </div>
+  </div>
     <UserNameSetter />
     </div>
     );
+  },
+
+  sendMessage: function(){
+    var text = this.state.text.trim();
+    if (text) {
+      ChatMessageActionCreators.createMessage(text, this.props.threadID);
+    }
+    this.setState({text: ''});
   },
 
   _onChange: function(event, value) {
     this.setState({text: event.target.value});
   },
 
+  _onSendClick: function() {
+    this.sendMessage();
+  },
+
   _onKeyDown: function(event) {
     if (event.keyCode === ENTER_KEY_CODE) {
       event.preventDefault();
-      var text = this.state.text.trim();
-      if (text) {
-        ChatMessageActionCreators.createMessage(text, this.props.threadID);
-      }
-      this.setState({text: ''});
+      this.sendMessage();
     }
   }
 

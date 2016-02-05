@@ -31,16 +31,6 @@ var ThreadListItem = React.createClass({
           'thread-list-item-unread': true
         })}
         onClick={this._onClick}>
-        <div className="x-thread">
-          <button
-            className="btn thread-delete"
-            onClick={this._onDeleteClick}
-            >
-              <small><span className="glyphicon glyphicon-remove">
-              </span>
-              </small>
-          </button>
-        </div>
         <div className="thread-title">
           <h5 className="thread-name">{thread.name}</h5>
         </div>

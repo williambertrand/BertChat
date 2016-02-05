@@ -25,12 +25,12 @@ var Header = React.createClass({
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <p className="navbar-brand">Bert Chat: Chat with Bert!</p>
+      <p className="navbar-brand"><a href="#/">Bert Chat: Chat with Bert!</a></p>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
+        <li><a href="#/about">About</a></li>
       </ul>
     </div>
 

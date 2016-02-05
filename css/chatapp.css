@@ -22,6 +22,12 @@
   width: 65%;
 }
 
+
+.message-send-btn{
+  float: right;
+  width: 8%;
+}
+
 .username-txt {
   float: left;
   width: 30%;
@@ -104,7 +110,7 @@
 
 .thread-title{
   width: 80%;
-  float: right;
+  float: left;
   text-align: right;
 }
 
@@ -125,6 +131,11 @@
   font-family: inherit;
   font-size: 14px;
   height: 5em;
-  width: 100%;
+  width: 60%;
   margin: 5px 0 10px 0;
+}
+
+.icon-img {
+  width: 64px;
+  height: 64px;
 }

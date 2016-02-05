@@ -1,0 +1,230 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-fontawesome' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/package.json
+5 warn package.json Bert-Chat@0.0.2 No repository field.
+6 warn package.json Bert-Chat@0.0.2 No license field.
+7 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/bootstrap/package.json
+8 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/browserify/package.json
+9 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/classnames/package.json
+10 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/envify/package.json
+11 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/flux/package.json
+12 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/keymirror/package.json
+13 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/object-assign/package.json
+14 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react/package.json
+15 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-bootstrap/package.json
+16 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-dom/package.json
+17 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-router/package.json
+18 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/reactify/package.json
+19 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/uglify-js/package.json
+20 verbose installManyTop reading scoped package data from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/watchify/package.json
+21 info package.json uglify-js@2.4.24 license should be a valid SPDX license expression
+22 info package.json keymirror@0.1.1 No license field.
+23 verbose readDependencies loading dependencies from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/package.json
+24 silly cache add args [ 'react-fontawesome', null ]
+25 verbose cache add spec react-fontawesome
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: 'react-fontawesome',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'react-fontawesome',
+26 silly cache add   rawSpec: '',
+26 silly cache add   spec: 'latest',
+26 silly cache add   type: 'tag' }
+27 silly addNamed react-fontawesome@latest
+28 verbose addNamed "latest" is being treated as a dist-tag for react-fontawesome
+29 info addNameTag [ 'react-fontawesome', 'latest' ]
+30 silly mapToRegistry name react-fontawesome
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/react-fontawesome
+34 verbose addNameTag registry:https://registry.npmjs.org/react-fontawesome not in flight; fetching
+35 verbose request uri https://registry.npmjs.org/react-fontawesome
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 12:21:50 AM
+38 verbose request id bf1fc94901bd2c15
+39 http request GET https://registry.npmjs.org/react-fontawesome
+40 http 200 https://registry.npmjs.org/react-fontawesome
+41 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+41 verbose headers   etag: '"CHN15HHZQ7EPX8ZPIYWL6SE5N"',
+41 verbose headers   'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '22016',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Fri, 05 Feb 2016 05:21:50 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   age: '0',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-atl6231-ATL',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1454649710.233955,VS0,VE492',
+41 verbose headers   vary: 'Accept' }
+42 silly get cb [ 200,
+42 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+42 silly get     etag: '"CHN15HHZQ7EPX8ZPIYWL6SE5N"',
+42 silly get     'content-type': 'application/json',
+42 silly get     'cache-control': 'max-age=300',
+42 silly get     'content-length': '22016',
+42 silly get     'accept-ranges': 'bytes',
+42 silly get     date: 'Fri, 05 Feb 2016 05:21:50 GMT',
+42 silly get     via: '1.1 varnish',
+42 silly get     age: '0',
+42 silly get     connection: 'keep-alive',
+42 silly get     'x-served-by': 'cache-atl6231-ATL',
+42 silly get     'x-cache': 'MISS',
+42 silly get     'x-cache-hits': '0',
+42 silly get     'x-timer': 'S1454649710.233955,VS0,VE492',
+42 silly get     vary: 'Accept' } ]
+43 verbose get saving react-fontawesome to /Users/William/.npm/registry.npmjs.org/react-fontawesome/.cache.json
+44 silly addNameTag next cb for react-fontawesome with tag latest
+45 silly addNamed react-fontawesome@0.3.3
+46 verbose addNamed "0.3.3" is a plain semver version for react-fontawesome
+47 silly mapToRegistry name react-fontawesome
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/react-fontawesome
+51 verbose addRemoteTarball https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz not in flight; adding
+52 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz',
+52 verbose addRemoteTarball   '6fa13ba05e38123c882fd48577d182c45cfe867e' ]
+53 info retry fetch attempt 1 at 12:21:51 AM
+54 info attempt registry request try #1 at 12:21:51 AM
+55 http fetch GET https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz
+56 http fetch 200 https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz
+57 silly fetchAndShaCheck shasum 6fa13ba05e38123c882fd48577d182c45cfe867e
+58 verbose addTmpTarball /var/folders/hp/d_tb429s4bbb1swfsnxdhhvm0000gn/T/npm-10532-be70f071/registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz not in flight; adding
+59 verbose addTmpTarball already have metadata; skipping unpack for react-fontawesome@0.3.3
+60 silly cache afterAdd react-fontawesome@0.3.3
+61 verbose afterAdd /Users/William/.npm/react-fontawesome/0.3.3/package/package.json not in flight; writing
+62 verbose afterAdd /Users/William/.npm/react-fontawesome/0.3.3/package/package.json written
+63 silly install resolved [ { name: 'react-fontawesome',
+63 silly install resolved     version: '0.3.3',
+63 silly install resolved     description: 'A React component for the font-awesome icon library.',
+63 silly install resolved     repository:
+63 silly install resolved      { type: 'git',
+63 silly install resolved        url: 'git+https://github.com/danawoodman/react-fontawesome.git' },
+63 silly install resolved     config: { entry: 'src', output: 'lib', mainFile: 'src/index.js' },
+63 silly install resolved     bugs: { url: 'https://github.com/danawoodman/react-fontawesome/issues' },
+63 silly install resolved     main: 'lib/index.js',
+63 silly install resolved     scripts:
+63 silly install resolved      { build: 'babel $npm_package_config_entry --out-dir $npm_package_config_output',
+63 silly install resolved        dist: 'npm run lint && npm run build && npm test && npm run docs',
+63 silly install resolved        docs: 'jsdoc2md $npm_package_config_mainFile > api.md',
+63 silly install resolved        lint: 'eslint .',
+63 silly install resolved        prepublish: 'npm run dist',
+63 silly install resolved        test: 'mocha',
+63 silly install resolved        watch: 'npm run watch-build & npm run watch-test',
+63 silly install resolved        'watch-build': 'npm run build -- --watch',
+63 silly install resolved        'watch-test': 'npm run test -- -w' },
+63 silly install resolved     keywords:
+63 silly install resolved      [ 'react',
+63 silly install resolved        'font-awesome',
+63 silly install resolved        'fontawesome',
+63 silly install resolved        'bootstrap',
+63 silly install resolved        'icons',
+63 silly install resolved        'fonts',
+63 silly install resolved        'icon',
+63 silly install resolved        'danawoodman',
+63 silly install resolved        'big',
+63 silly install resolved        'style',
+63 silly install resolved        'jsx',
+63 silly install resolved        'react-component',
+63 silly install resolved        'component' ],
+63 silly install resolved     author:
+63 silly install resolved      { name: 'Dana Woodman',
+63 silly install resolved        email: 'dana@danawoodman.com',
+63 silly install resolved        url: 'danawoodman.com' },
+63 silly install resolved     license: 'MIT',
+63 silly install resolved     devDependencies:
+63 silly install resolved      { babel: '^5.8.23',
+63 silly install resolved        chai: '^3.2.0',
+63 silly install resolved        eslint: '^1.2.1',
+63 silly install resolved        'eslint-plugin-nodeca': '^1.0.3',
+63 silly install resolved        'eslint-plugin-react': '^3.3.0',
+63 silly install resolved        'jsdoc-to-markdown': '^1.1.1',
+63 silly install resolved        jsdom: '^6.2.0',
+63 silly install resolved        mocha: '^2.2.5',
+63 silly install resolved        'mocha-jsdom': '^1.0.0',
+63 silly install resolved        'mocha-sinon': '^1.1.4',
+63 silly install resolved        sinon: '^1.16.1',
+63 silly install resolved        'sinon-chai': '^2.8.0' },
+63 silly install resolved     homepage: 'https://github.com/danawoodman/react-fontawesome#readme',
+63 silly install resolved     engines: { node: '>=0.10.0' },
+63 silly install resolved     dependencies: {},
+63 silly install resolved     peerDependencies: { react: '>=0.12.0' },
+63 silly install resolved     gitHead: 'f91701d16a57337657c1e027ac5f6bd9cb932f43',
+63 silly install resolved     _id: 'react-fontawesome@0.3.3',
+63 silly install resolved     _shasum: '6fa13ba05e38123c882fd48577d182c45cfe867e',
+63 silly install resolved     _from: 'react-fontawesome@latest',
+63 silly install resolved     _npmVersion: '2.13.3',
+63 silly install resolved     _nodeVersion: '3.0.0',
+63 silly install resolved     _npmUser: { name: 'danawoodman', email: 'dana@danawoodman.com' },
+63 silly install resolved     maintainers: [ [Object] ],
+63 silly install resolved     dist:
+63 silly install resolved      { shasum: '6fa13ba05e38123c882fd48577d182c45cfe867e',
+63 silly install resolved        tarball: 'http://registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz' },
+63 silly install resolved     directories: {},
+63 silly install resolved     _resolved: 'https://registry.npmjs.org/react-fontawesome/-/react-fontawesome-0.3.3.tgz' } ]
+64 info install react-fontawesome@0.3.3 into /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public
+65 info installOne react-fontawesome@0.3.3
+66 verbose installOne of react-fontawesome to /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public not in flight; installing
+67 verbose lock using /Users/William/.npm/_locks/react-fontawesome-2264746c4251a5dd.lock for /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+68 silly install write writing react-fontawesome 0.3.3 to /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+69 verbose unbuild node_modules/react-fontawesome
+70 silly gentlyRm /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome is being purged from base /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public
+71 verbose gentlyRm don't care about contents; nuking /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+72 verbose tar unpack /Users/William/.npm/react-fontawesome/0.3.3/package.tgz
+73 verbose tar unpacking to /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+74 silly gentlyRm /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome is being purged
+75 verbose gentlyRm don't care about contents; nuking /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+76 silly gunzTarPerm modes [ '755', '644' ]
+77 silly gunzTarPerm extractEntry package.json
+78 silly gunzTarPerm extractEntry .npmignore
+79 silly gunzTarPerm extractEntry .yo-rc.json
+80 silly gunzTarPerm extractEntry changelog.md
+81 silly gunzTarPerm extractEntry lib/index.js
+82 silly gunzTarPerm extractEntry license
+83 silly gunzTarPerm extractEntry .eslintignore
+84 silly gunzTarPerm extractEntry readme.md
+85 verbose write writing to /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome/package.json
+86 info preinstall react-fontawesome@0.3.3
+87 verbose readDependencies loading dependencies from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome/package.json
+88 verbose readDependencies loading dependencies from /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome/package.json
+89 silly install resolved []
+90 verbose about to build /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+91 info build /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+92 info linkStuff react-fontawesome@0.3.3
+93 silly linkStuff react-fontawesome@0.3.3 has /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules as its parent node_modules
+94 verbose linkBins react-fontawesome@0.3.3
+95 verbose linkMans react-fontawesome@0.3.3
+96 verbose rebuildBundles react-fontawesome@0.3.3
+97 info install react-fontawesome@0.3.3
+98 info postinstall react-fontawesome@0.3.3
+99 verbose unlock done using /Users/William/.npm/_locks/react-fontawesome-2264746c4251a5dd.lock for /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/node_modules/react-fontawesome
+100 verbose validateInstall loading /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public/package.json for validation
+101 verbose stack Error: The package react@0.12.2 does not satisfy its siblings' peerDependencies requirements!
+101 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+101 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+101 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+101 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+101 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+101 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+101 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+101 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+101 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+101 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+102 verbose cwd /Users/William/Documents/Projects/BertsNanas/BertChat/bert-chat/public
+103 error Darwin 15.2.0
+104 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "react-fontawesome"
+105 error node v4.2.4
+106 error npm  v2.14.12
+107 error code EPEERINVALID
+108 error peerinvalid The package react@0.12.2 does not satisfy its siblings' peerDependencies requirements!
+108 error peerinvalid Peer react-dom@0.14.7 wants react@^0.14.7
+108 error peerinvalid Peer react-fontawesome@0.3.3 wants react@>=0.12.0
+108 error peerinvalid Peer react-bootstrap@0.28.2 wants react@>=0.14.0
+109 verbose exit [ 1, true ]

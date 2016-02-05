@@ -64,8 +64,9 @@ var MessageSection = React.createClass({
               <p>{this.state.user.firstName}</p>
             </div>
           </div>
-
-          <MessageComposer threadID={this.state.thread.id}/>
+          <MessageComposer
+            threadID={this.state.thread.id}
+          />
         </div>
       </div>
     );

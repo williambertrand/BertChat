@@ -9,6 +9,7 @@ var Header = require('./Header.react');
 var React = require('react');
 var ThreadSection = require('./ThreadSection.react');
 var UserNameSetter = require('./UserNameSetter.react')
+var OpenTodos = require('./OpenTodos.react');
 
 var ChatApp = React.createClass({
 
@@ -18,6 +19,7 @@ var ChatApp = React.createClass({
         <Header/>
         <ThreadSection />
         <MessageSection />
+        <OpenTodos />
       </div>
     );
   }
